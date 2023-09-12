@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">SURVEY FORM</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main>
+        <form action="#" id="survey-form">
+            <fieldset id="section-one">
+                <div class="credential">
+                    <label for="name" id="name-label">
+                        Enter Your Name: 
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </label>
+                    <label for="email" id="email-label">
+                        Enter Your Email: 
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </label>
+                    <label for="number" id="number-label">
+                        Enter Your Age: 
+                        <input type="number" id="number" min="13" max="100" placeholder="Your Age" required>
+                    </label>
+                </div>
+                
+                <div class="dropdown-container">
+                    <p>Describe Yourself</p>
+                    <label for="dropdown">
+                        <select name="dropdown" id="dropdown" placeholder="select one">
+                            <option value="student" style="color: black;">Student</option>
+                            <option value="teacher" style="color: black;">Teacher</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div id="gender-radio">
+                    <p>What's Your Gender?</p>
+                    <label for="gender-male">
+                        <input type="radio" id="gender-male" value="male" name="gender">
+                        Male
+                    </label>
+                    <label for="gender-female" id="gender-female">
+                        <input type="radio" id="gender-female" value="female" name="gender">
+                        Female
+                    </label>
+                </div>
+
+                <div id="checkbox">
+                    <input type="checkbox" value="AGREED" id="terms-and-conditions" required> <label for="terms-and-conditions">Please agree to our <a href="#">terms and conditions</a></label>
+                    <br>
+                    <input type="checkbox" value="SUBBED" id="newsletter"> <label for="newsletter">Subscribe to our Newsletter</label>
+                </div>
+
+                <div class="text-box">
+                    <label for="textbox">Tell us something</label>
+                    <textarea name="textbox" id="textbox" cols="100%" rows="10" placeholder="type here..."></textarea>
+                </div>
+
+                <input type="submit" value="submit" id="submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

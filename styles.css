@@ -1,0 +1,114 @@
+/* SKELETON */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+body {
+    background-image: url(assets/Simple\ Shiny.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 0;
+}
+
+/* FORMS */
+form {
+    display: block;
+    margin: auto 30em;
+    margin-bottom: 4vh;
+    background-color: rgba(43, 43, 59, 0.753);
+    border-radius: 20px;
+}
+fieldset{
+    border: 0;
+}
+input {
+    background-color: rgba(2, 2, 3, 0.075);
+    padding: 5px;
+    border: rgba(2, 2, 3, 0.075) solid;
+    border-radius: 5px;
+}
+
+/* CREDENTIAL */
+.credential {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.credential label {
+    display: flex;
+    flex-direction: column;
+}
+.credential input {
+    height: 2em;
+}
+
+/* DROPDOWN */
+.dropdown-container {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    height: 2em;
+}
+.dropdown-container select, .dropdown-container select option{
+    color: white;
+}
+.dropdown-container select {
+    background-color: rgba(2, 2, 3, 0.075);
+    border: rgba(2, 2, 3, 0.075) solid;
+    border-radius: 5px;
+}
+
+/* GENDER */
+#gender-radio {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* CHECKBOXES */
+#checkbox {
+    display: block;
+    padding: 20px;
+}
+
+/* TEXTBOX */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+textarea {
+    background-color: rgba(2, 2, 3, 0.075);
+    padding: 5px;
+    border: rgba(2, 2, 3, 0.075) solid;
+    border-radius: 5px;
+}
+
+/* SUBMIT BUTTON */
+#submit {
+    display: flex;
+    margin: 15px auto;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(50, 50, 68, 0.719);
+    border: rgba(50, 50, 68, 0.719) solid;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+#submit:hover {
+    transform: scale(1.1);
+}
